@@ -6,4 +6,4 @@ This is a fix for people that have tried importing Campus Connection academic ca
 Run the python script to fix the .ics file. :)
 
 For example, on a Unix/Windows system:
-python fix.py calendar.ics
+<code>python fix.py calendar.ics</code>
