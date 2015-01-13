@@ -3,11 +3,6 @@ from shutil import move
 from os import remove, close
 import sys
 
-
-if __name__ == "__main__":
-  file_path = sys.argv[1]
-  replaceAll(file_path,'EXDATE;"', 'EXDATE;TZID="')
-
 # Inspired by:
 # http://stackoverflow.com/questions/39086/search-and-replace-a-line-in-a-file-in-python
 def replaceAll(file_path, pattern, substr):
@@ -25,3 +20,7 @@ def replaceAll(file_path, pattern, substr):
   remove(file_path)
   # Move file
   move(temp_path, file_path)
+
+if __name__ == "__main__":
+  file_path = sys.argv[1]
+  replaceAll(file_path,'EXDATE;"', 'EXDATE;TZID="')
